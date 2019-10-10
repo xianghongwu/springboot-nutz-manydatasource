@@ -1,0 +1,49 @@
+logging:
+  level:
+    root: info
+    org.nutz: warn
+hikari:
+  primary:
+    jdbcUrl: jdbc:mysql://192.168.29.128:3306/test1?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: 123456
+    driverClassName: com.mysql.jdbc.Driver
+  secondary:
+    jdbcUrl: jdbc:mysql://192.168.29.128:3306/test2?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: 123456
+    driverClassName: com.mysql.jdbc.Driver
+spring:
+  aop:
+    auto: true
+    proxy-target-class: true
+  http:
+    encoding:
+      charset: utf-8
+      force: true
+      enabled: true
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+
+nutz:
+  json:
+    auto-unicode: false
+    quote-name: true
+    ignore-null: true
+    null-as-emtry: true
+    enabled: true
+    mode: compact
+  dao:
+    runtime:
+      create: true
+      migration: false
+      basepackage:
+       - com.xhw.nutzmanydatasource.model.mapped
+       - BOOT-INF.classes.com.xhw.nutzmanydatasource.model.mapped
+    sqlmanager:
+      paths:
+        - sqls
+server:
+  port: 8060

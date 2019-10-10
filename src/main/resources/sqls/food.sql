@@ -1,0 +1,2 @@
+/* getuserList */
+select * from user;

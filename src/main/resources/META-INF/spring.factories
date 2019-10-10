@@ -1,0 +1,3 @@
+# Auto Configure
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.xhw.nutzmanydatasource.configure.nutz.NutzDaoAutoConfiguration,com.xhw.nutzmanydatasource.configure.nutz.NutzDataBaseIniter,com.xhw.nutzmanydatasource.configure.nutz.NutzJsonMessageConverterAutoConfiguration,com.xhw.nutzmanydatasource.configure.nutz.SqlManagerAutoConfiguration
